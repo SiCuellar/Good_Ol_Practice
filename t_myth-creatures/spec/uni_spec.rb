@@ -1,5 +1,6 @@
 require 'rspec'
 require './lib/unicorn'
+require 'pry'
 
 RSpec.describe Unicorn do
   it 'has a name' do
@@ -8,6 +9,7 @@ RSpec.describe Unicorn do
   end
 
   it 'is silver by default' do
+    # skip
     unicorn = Unicorn.new('Margaret')
     expect(unicorn.color).to eq('silver')
     expect(unicorn.silver?).to eq(true)
@@ -15,6 +17,7 @@ RSpec.describe Unicorn do
   end
 
   it 'doesnt have to be silver' do
+    # skip
     unicorn = Unicorn.new('Barbara', 'purple')
     expect(unicorn.color).to eq('purple')
     expect(unicorn.silver?).to eq(false)
@@ -22,6 +25,7 @@ RSpec.describe Unicorn do
   end
 
   it 'says sparkly stuff' do
+    # skip
     unicorn = Unicorn.new('Johnny')
     expect(unicorn.say('Wonderful!')).to eq('**;* Wonderful! **;*')
     expect(unicorn.say('I dont like you very much.')).to eq('**;* I dont like you very much. **;*')
