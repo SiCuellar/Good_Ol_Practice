@@ -3,11 +3,13 @@ require 'pry'
 class Hobbit
     attr_reader :name,
                 :disposition,
-                :age
+                :age,
+                :short
     def initialize(name, disposition = "homebody")
         @name = name
         @disposition = disposition
         @age = 0
+        @short = true 
     end 
 
     def celebrate_birthday
@@ -36,5 +38,9 @@ class Hobbit
         else
             false
         end 
+    end
+    
+    def short?
+        @short 
     end 
 end 
