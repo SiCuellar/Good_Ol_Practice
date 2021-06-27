@@ -8,6 +8,7 @@ class Pirate
         @name = name
         @job = job
         @cursed_count = 0
+        @booty = 0
     end 
 
     def commit_heinous_act
@@ -20,5 +21,13 @@ class Pirate
         else
             false
         end  
+    end 
+
+    def booty
+        @booty
+    end 
+
+    def rob_ship
+        @booty += 100
     end 
 end 
