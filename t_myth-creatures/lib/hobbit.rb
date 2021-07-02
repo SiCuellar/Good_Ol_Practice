@@ -43,4 +43,5 @@ class Hobbit
     def short?
         @short 
     end 
+    
 end 
